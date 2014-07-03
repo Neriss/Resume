@@ -152,6 +152,10 @@ body {
 			padding: 0.3em;
 			font-size: 1.5em;
 
+			&:last-child {
+				padding-left: 0.1em;
+			}
+
 			&:hover {
 				color: $gold;
 			}
@@ -173,9 +177,21 @@ body {
 	top: 0;
 	right: 0;
 	background: $black;
+	opacity: 0.8;
 	padding: 1em;
 	width: 15%;
+	height: 72px;
+	font-size: 1em;
 	z-index: 3000;
+	-webkit-transition: width 1.5s ease, height 1.5s ease, font-size 1.5s ease, padding 1.5s ease;
+	transition: width 1.5s ease, height 1.5s ease, font-size 1.5s ease, padding 1.5s ease;
+
+	&:hover {
+		width: 30%;
+		height: 115px;
+		font-size: 2em;
+		padding: 0.5em;
+	}
 
 	.phone:before {
 		font-family: 'FontAwesome';
